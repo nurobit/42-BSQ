@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jpickett <jpickett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/03 21:59:25 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 18:06:26 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 22:36:55 by jpickett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int		ft_atoi(char *str)
 	str = shift(str);
 	isneg = (*str == '-') ? 1 : 0;
 	ft_putstr("Value is ");
-	ft_putstr((isneg) ? "negative.\n" : "not negative.\n");	
+	ft_putstr((isneg) ? "negative.\n" : "not negative.\n");
 	ft_putstr(str);
 	i = 0;
 	n = 0;

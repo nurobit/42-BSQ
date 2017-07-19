@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_main.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jpickett <jpickett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/18 14:03:46 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 18:09:18 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 22:31:49 by jpickett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ int		main(int ac, char **av)
 	if (ac == 2)
 	{
 		ft_bsq(av[1]);
-		return(0);
+		return (0);
 	}
 	else if (ac > 2)
 		while (++i < ac)
 			ft_bsq(av[i]);
-	return(0);
+	return (0);
 }

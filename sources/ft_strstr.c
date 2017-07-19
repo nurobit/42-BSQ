@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jpickett <jpickett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 23:22:30 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/07 06:39:21 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 22:32:06 by jpickett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strstr(char *str, char *to_find)
 {
-	int i;
-	char r;
+	int		i;
+	char	r;
 
 	i = 0;
 	r = '\0';

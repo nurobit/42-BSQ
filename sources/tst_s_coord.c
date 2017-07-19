@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   tst_s_coord.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jpickett <jpickett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/18 16:08:45 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 17:18:02 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 22:31:36 by jpickett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 int		main(int ac, char **av)
 {
 	t_coord		cd;
+
 	if (ac == 1 || ac > 3)
 	{
 		cd.x = 10;
@@ -28,5 +29,5 @@ int		main(int ac, char **av)
 		cd.y = ft_atoi((ac == 2) ? "32" : av[2]);
 		printf("Test coord struct: x[%i] y[%i]\n", cd.x, cd.y);
 	}
-	return 0;
+	return (0);
 }

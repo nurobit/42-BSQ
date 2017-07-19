@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_coord.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jpickett <jpickett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/18 15:37:24 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 16:07:16 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 22:36:09 by jpickett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_COORD_H
 # define FT_COORD_H
-# include "ft_atoi.c"
+# include "ft_atoi"
 
 typedef	struct	s_coord
 {
