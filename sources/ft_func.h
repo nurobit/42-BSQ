@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_func.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vwade <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/18 14:35:32 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 14:46:10 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 17:17:59 by vwade            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,5 @@
 # include "ft_putstr.c"
 # include "ft_strlen.c"
 # include "ft_strcmp.c"
+# include "ft_coord.h"
 #endif

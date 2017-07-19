@@ -6,9 +6,12 @@
 /*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/03 00:01:07 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/04 21:49:06 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 17:22:33 by vwade            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef FT_PUTSTR_C
+# define FT_PUTSTR_C
 
 void	ft_putchar(char c);
 
@@ -23,6 +26,8 @@ void	ft_putstr(char *str)
 		pos++;
 	}
 }
+
+#endif
 
 /*
 **	An array is a pointer to a set of data stored in memory.

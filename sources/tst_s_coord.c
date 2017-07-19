@@ -6,12 +6,12 @@
 /*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/18 16:08:45 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 16:09:16 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 17:18:02 by vwade            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include "ft_coord.h"
+#include "ft_func.h"
 
 int		main(int ac, char **av)
 {

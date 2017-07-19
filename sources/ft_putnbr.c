@@ -6,7 +6,7 @@
 /*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/03 05:52:01 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/04 07:08:04 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 21:17:08 by vwade            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@ void	ft_putnbr(int nb)
 	int isneg;
 
 	isneg = (nb < 0) ? 1 : 0;
-	nb = (nb < 0) ? nb * -1 : nb;
-	if (isneg != 0)
-		ft_putchar('-');
+	nb = (isneg) ? -nb : nb;
 	if (nb > 9 || nb % 10 < 0)
-		ft_putnbr((nb % 10 < 0) ? -1 * (nb / 10) : nb / 10);
+		return(ft_putnbr((nb % 10 < 0) ? -1 * (nb / 10) : nb / 10));
 	ft_putchar((nb % 10 < 0) ? '0' - (nb % 10) : nb % 10 + '0');
 }
 

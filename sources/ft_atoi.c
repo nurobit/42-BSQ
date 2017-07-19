@@ -6,7 +6,7 @@
 /*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/03 21:59:25 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 16:47:38 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 18:06:26 by vwade            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,18 @@ int		ft_atoi(char *str)
 	int n;
 	int isneg;
 
+	str = shift(str);
+	isneg = (*str == '-') ? 1 : 0;
+	ft_putstr("Value is ");
+	ft_putstr((isneg) ? "negative.\n" : "not negative.\n");	
+	ft_putstr(str);
 	i = 0;
 	n = 0;
-	str = shift(str);
-	isneg = (str[0] == '-') ? 1 : 0;
-	str = (str[0] == '-') ? str++ : str;
-	while (str[i] >= '0' && str[i] <= '9')
+	if (*str == '-')
+		str++;
+	while (*str >= '0' && *str <= '9')
 	{
-		n = 10 * n + (str[i] - '0');
-		i++;
+		n = 10 * n + (*str++ - '0');
 	}
 	return ((isneg) ? -n : n);
 }

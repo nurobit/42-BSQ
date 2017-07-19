@@ -3,36 +3,76 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bsq.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vwade <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/18 14:03:46 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 15:04:34 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 21:17:07 by vwade            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <fcntl.h>
 #include <unistd.h>
-#define BUF_SIZE 42
+#define BUF_SIZE 1
+
+typedef struct s_line
+{
+	struct	s_line	next;
+	void	*data;
+}				t_line;
 
 typedef	struct	s_coord
 {
-	int			x;
-	int			y;
+	int		x;
+	int		y;
 }				t_coord;
+
+typedef struct 	s_llen
+{
+	int		len;
+	void	*data;
+}				l_llen;
+
+l_llen	*ft_create_elem(void *data)
+{
+	l_llen	*newline;
+
+	newline = malloc(sizeof(newline));
+	newline->data = data;
+	return(newline);
+}
 
 /*
 **	BSQ
 **	Read file to variable
 */
 
+void	ft_list_push_front(t_line **new_line, void *data)
+{
+	t_line *index;
+
+	index = ft_create_elem(data);
+	if (index)
+		{
+			index->next = *new_line;
+			*new_line = index;
+		}
+}
+
 int		ft_nlines(char *str)
 {
-	int	n;	
+	int		n;
+
 	n = 0;
-	while (*str != '\0')
+	while (*str)
 		if (*str++ == '\n')
 			n++;
 	return (n);
+}
+
+void	proc_first(char *c)
+{
+	if (c >= '0' && c <= '9')
+		
 }
 
 void	ft_bsq(char *m)
@@ -43,7 +83,14 @@ void	ft_bsq(char *m)
 
 	nlines = 0;
 	fd = open(m, O_RDONLY);
-	while (read(fd, buf, BUF_SIZE)
-			nlines = nlines + ft_nlines(buf);
+	while (read(fd, buf, BUF_SIZE))
+	{
+		if (nlines == 0)
+		{
+
+		}
+		buf = '\0'
+		nlines = nlines + ft_nlines(buf);
+	}
 	
 }

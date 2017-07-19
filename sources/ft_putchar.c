@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_main.c                                          :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/07/18 14:03:46 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 18:09:18 by vwade            ###   ########.fr       */
+/*   Created: 2017/07/18 17:18:58 by vwade             #+#    #+#             */
+/*   Updated: 2017/07/18 17:20:40 by vwade            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_func.h"
+#ifndef FT_PUTCHAR_C
+# define FT_PUTCHAR_C
+# include <unistd.h>
 
-int		main(int ac, char **av)
+void	ft_putchar(char c)
 {
-	int i;
-
-	i = 0;
-	if (ac == 2)
-	{
-		ft_bsq(av[1]);
-		return(0);
-	}
-	else if (ac > 2)
-		while (++i < ac)
-			ft_bsq(av[i]);
-	return(0);
+	write(1,&c, 1);
 }
+
+#endif
