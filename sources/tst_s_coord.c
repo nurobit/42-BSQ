@@ -6,7 +6,7 @@
 /*   By: jpickett <jpickett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/18 16:08:45 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 22:31:36 by jpickett         ###   ########.fr       */
+/*   Updated: 2017/07/18 23:36:50 by jpickett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,7 @@ int		main(int ac, char **av)
 	}
 	return (0);
 }
+
+/*
+**	used for debugging, tested to see why '-' was returning 0
+*/
