@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_prop-bsq.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vwade <vwade@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jpickett <jpickett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/18 14:03:46 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 15:32:22 by vwade            ###   ########.fr       */
+/*   Updated: 2017/07/18 21:38:09 by jpickett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,6 @@ void    ft_bsq(char *m)
 
     nlines = 0;
     fd = open(m, O_RDONLY);
-    while (read(fd, buf, BUF_SIZE)
+    while (read(fd, buf, BUF_SIZE))
             nlines = nlines + ft_nlines(buf);
 }
