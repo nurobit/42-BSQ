@@ -6,7 +6,7 @@
 /*   By: jpickett <jpickett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/18 14:35:32 by vwade             #+#    #+#             */
-/*   Updated: 2017/07/18 22:37:08 by jpickett         ###   ########.fr       */
+/*   Updated: 2017/07/18 22:59:32 by jpickett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,4 +20,5 @@
 # include "ft_strlen"
 # include "ft_strcmp"
 # include "ft_coord.h"
+# include "ft_print_x"
 #endif

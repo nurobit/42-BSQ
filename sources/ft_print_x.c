@@ -6,7 +6,7 @@
 /*   By: jpickett <jpickett@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/18 21:30:42 by jpickett          #+#    #+#             */
-/*   Updated: 2017/07/18 21:45:11 by jpickett         ###   ########.fr       */
+/*   Updated: 2017/07/18 23:03:51 by jpickett         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,18 @@ char	**ft_print_x(char **CHANGEME, char **str, int x, int y)
 	int		temp;
 
 	temp = y;
-	*CHANGEME = **str;
+	**CHANGEME = **str;
 	while (CHANGEME[x][y] != 'o')
 	{
-		while(y > 0)
+		while (y > 0)
 		{
-			CHANGEME[x][y] = 'x'
+			CHANGEME[x][y] = 'x';
 			y--;
 		}
 		y = temp;
 		x--;
 	}
-	return (CHANGEME)
+	return (CHANGEME);
 }
 
 /*	this file prints the values of x
